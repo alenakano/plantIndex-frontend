@@ -21,7 +21,7 @@ $border-color: $shilo;
 $border-bright-color: $envy;
 $icon-separator-color: $cabbage-pont;
 $background-menu-color: $alabaster;
-
+$mask: #68686BBB;
 
 /// FUNCTIONS
 @function calculateRem($size, $scale: 1) {

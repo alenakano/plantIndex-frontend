@@ -16,9 +16,9 @@ body {
   grid-template-areas:
     "header"
     "main"
-    "rodape";
+    "footer";
   grid-template-columns: auto;
-  grid-template-rows: 70px calc(100vh - 70px) 55px;
+  grid-template-rows: 70px auto auto;
 }
 
 .header {
@@ -33,7 +33,7 @@ body {
 }
 
 .footer {
-  grid-area: rodape;
+  grid-area: footer;
 }
 
 .title {
