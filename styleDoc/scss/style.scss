@@ -1,0 +1,51 @@
+
+@import 'reset', 'variables';
+
+/*
+** GLOBAL **
+*/
+body {
+  @include background-color();
+  font-family: $font-poppins;
+  font-size: $font-default;
+  color: $title-deep-color;
+}
+
+.app {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "rodape";
+  grid-template-columns: auto;
+  grid-template-rows: 70px calc(200vh - 70px - 55px) 55px;
+}
+
+.header {
+  grid-area: header;
+  top: 0;
+  position: sticky;
+}
+
+.main {
+  grid-area: main;
+  font-size: $font-default;
+}
+
+.footer {
+  grid-area: rodape;
+}
+
+.title {
+  font-family: $font-poppins;
+  font-size: 2.75rem;
+  font-weight: $font-regular;
+  color: $title-bright-color;
+}
+
+.title--signature {
+  font-family: $font-source-sans;
+  font-size: $font-title;
+  font-weight: $font-light;
+  color: $title-deep-color;
+}

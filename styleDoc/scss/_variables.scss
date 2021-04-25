@@ -1,0 +1,33 @@
+/// VARIABLES
+$font-poppins: 'Poppins', sans-serif;
+$font-source-sans: 'Source Sans Pro', sans-serif;;
+$font-default: 1.25rem;
+$font-title: 3rem;
+$font-light: 100;
+$font-regular: 400;
+
+// BASE COLORS
+$alabaster: #fafafc;
+$white-lilac: #faf9fc;
+$envy: #87a487;
+$cabbage-pont: #3a503c;
+$shilo: #ecb2a9;
+$watusi: #ffdfd4;
+
+// NAMED COLORS
+$title-deep-color: $cabbage-pont;
+$title-bright-color: $envy;
+$border-color: $shilo;
+$border-deep-color: $envy;
+$background-menu-color: $alabaster;
+
+
+/// FUNCTIONS
+@function calculateRem($size, $scale: 1) {
+	@return $size/16px * 1rem * $scale;
+}
+
+/// MIXINS
+@mixin background-color($color1: $white-lilac, $color2: $alabaster) {
+	background: linear-gradient(to bottom, $color1 0%, $color2 100%);
+}

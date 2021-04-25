@@ -1,0 +1,56 @@
+@import '../variables';
+
+@mixin setup-bullet-icon($url) {
+  padding-left: 2rem;
+  &:before {
+    /// forma de mudar cor svg como background image
+    mask-image: url($url);
+    mask-size: 100% 100%;
+    background-color: $border-deep-color;
+    content: '';
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+  }
+}
+
+@mixin background-opacity($color, $opacity: 0.3) {
+  background: $color;
+  background: rgba($color, $opacity);
+}
+
+.menu {
+  background-color: $alabaster;
+  &__block {
+    border-bottom: 1px solid $border-color;
+    margin: 0 auto;
+    width: 80%;
+    box-sizing: border-box;
+    height: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    padding: 0.5rem;
+  }
+  &__list {
+    display: flex;
+    flex-direction: row;
+  }
+  &__item {
+    :hover {
+      @include background-opacity($watusi, 0.8);
+      border-radius: 20%;
+    }
+    &--icon1 {
+      @include setup-bullet-icon('../../assets/icon.svg');
+      
+    }
+    &--icon2 {
+      @include setup-bullet-icon('../../assets/icon2.svg');
+    }
+    &--icon3 {
+      @include setup-bullet-icon('../../assets/icon3.svg');
+    }
+  }
+}
+
