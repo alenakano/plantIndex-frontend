@@ -18,7 +18,7 @@ body {
     "main"
     "rodape";
   grid-template-columns: auto;
-  grid-template-rows: 70px calc(200vh - 70px - 55px) 55px;
+  grid-template-rows: 70px calc(100vh - 70px) 55px;
 }
 
 .header {
@@ -43,9 +43,11 @@ body {
   color: $title-bright-color;
 }
 
-.title--signature {
-  font-family: $font-source-sans;
-  font-size: $font-title;
-  font-weight: $font-light;
-  color: $title-deep-color;
+.title {
+  &--signature {
+    font-family: $font-source-sans;
+    font-size: $font-title;
+    font-weight: $font-light;
+    color: $title-deep-color;
+  }
 }

@@ -18,7 +18,8 @@ $watusi: #ffdfd4;
 $title-deep-color: $cabbage-pont;
 $title-bright-color: $envy;
 $border-color: $shilo;
-$border-deep-color: $envy;
+$border-bright-color: $envy;
+$icon-separator-color: $cabbage-pont;
 $background-menu-color: $alabaster;
 
 
@@ -30,4 +31,19 @@ $background-menu-color: $alabaster;
 /// MIXINS
 @mixin background-color($color1: $white-lilac, $color2: $alabaster) {
 	background: linear-gradient(to bottom, $color1 0%, $color2 100%);
+}
+
+@mixin separator($url:'../../assets/icon3.svg') {
+	text-align: center;
+	&:before {
+		content: '';
+		mask-image: url($url);
+		mask-size: 100% 100%;
+		background-color:$icon-separator-color;
+		display: block;
+		margin: 0 auto;
+		padding-bottom: 3rem;
+		height: 1em;
+		width: 1em;
+	}
 }

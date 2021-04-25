@@ -6,7 +6,7 @@
     /// forma de mudar cor svg como background image
     mask-image: url($url);
     mask-size: 100% 100%;
-    background-color: $border-deep-color;
+    background-color: $border-bright-color;
     content: '';
     display: inline-block;
     height: 1em;
@@ -21,6 +21,7 @@
 
 .menu {
   background-color: $alabaster;
+  z-index: 1;
   &__block {
     border-bottom: 1px solid $border-color;
     margin: 0 auto;
