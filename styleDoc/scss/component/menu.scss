@@ -41,7 +41,7 @@
   }
   &__item {
     :hover {
-      border-bottom: 2px solid $font-bright-color;
+      border-bottom: 2px solid $border-bright-color;
     }
     &--icon1 {
       @include setup-bullet-icon('../../assets/icon.svg');
