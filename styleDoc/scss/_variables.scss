@@ -5,6 +5,7 @@ $font-default: 1.25rem;
 $font-title: 3rem;
 $font-light: 100;
 $font-regular: 400;
+$font-button: $font-poppins;
 
 // BASE COLORS
 $alabaster: #fafafc;
@@ -21,7 +22,9 @@ $border-color: $shilo;
 $border-bright-color: $envy;
 $icon-separator-color: $cabbage-pont;
 $background-menu-color: $alabaster;
+$button-color-font: $cabbage-pont;
 $mask: #68686BBB;
+$shadow: 1px 5px 10px 1px #DDD;
 
 /// FUNCTIONS
 @function calculateRem($size, $scale: 1) {
