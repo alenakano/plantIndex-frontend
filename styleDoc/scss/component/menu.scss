@@ -4,6 +4,8 @@
   padding-left: 2rem;
   &:before {
     /// forma de mudar cor svg como background image
+    -webkit-mask-image: url($url);
+    -webkit-mask-size: 100% 100%;;
     mask-image: url($url);
     mask-size: 100% 100%;
     background-color: $border-bright-color;
@@ -29,7 +31,7 @@
     box-sizing: border-box;
     height: 100%;
     display: flex;
-    align-items: end;
+    align-items: baseline;
     justify-content: space-between;
     padding: 0.5rem;
   }
