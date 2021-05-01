@@ -41,8 +41,7 @@
   }
   &__item {
     :hover {
-      @include background-opacity($watusi, 0.8);
-      border-radius: 20%;
+      border-bottom: 2px solid $font-bright-color;
     }
     &--icon1 {
       @include setup-bullet-icon('../../assets/icon.svg');
@@ -54,6 +53,9 @@
     &--icon3 {
       @include setup-bullet-icon('../../assets/icon3.svg');
     }
+  }
+  &__text {
+    padding-bottom: 0.2rem;
   }
 }
 
