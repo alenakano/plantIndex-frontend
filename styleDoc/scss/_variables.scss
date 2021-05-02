@@ -1,12 +1,14 @@
 /// VARIABLES
 $font-poppins: 'Poppins', sans-serif;
 $font-source-sans: 'Source Sans Pro', sans-serif;;
-$font-default: 1.25rem;
-$font-title: 3rem;
+
+$font-button: $font-poppins;
+$font-weight-default: 1.25rem;
+$font-family-text: $font-poppins;
+$font-input: $font-poppins;
 $font-light: 100;
 $font-regular: 400;
-$font-button: $font-poppins;
-$font-input: $font-poppins;
+$font-title: 3rem;
 
 // BASE COLORS
 $alabaster: #fafafc;
