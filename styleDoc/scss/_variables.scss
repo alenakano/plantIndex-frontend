@@ -17,25 +17,33 @@ $shilo: #ecb2a9;
 $watusi: #ffdfd4;
 
 // NAMED COLORS
-$font-deep-color: $cabbage-pont;
-$font-bright: $alabaster;
-$title-deep-color: $cabbage-pont;
-$title-bright-color: $envy;
+$background-menu-color: $alabaster;
+$border-bright-color: $envy;
 $border-color: $envy;
 $border-focus-color: $shilo;
 $button-background-transition-color: $envy;
 $button-color: $cabbage-pont;
-$button-transition-color: $shilo;
-$border-bright-color: $envy;
-$icon-separator-color: $cabbage-pont;
-$background-menu-color: $alabaster;
 $button-color-font: $cabbage-pont;
+$button-transition-color: $shilo;
+$checkbox-active-color: $cabbage-pont;
+$checkbox-background-color: $watusi;
+$checkbox-border-color: $cabbage-pont;
+$checkbox-check-color: $alabaster;
+$checkbox-hover-color: $envy;
+$font-deep-color: $cabbage-pont;
+$font-bright: $alabaster;
+$icon-separator-color: $cabbage-pont;
 $mask: #68686BBB;
-$radio-color: $shilo;
+$radio-active-color: $cabbage-pont;
+$radio-border-color: $cabbage-pont;
+$radio-check-color: $alabaster;
+$radio-background-color: $watusi;
 $radio-hover-color: $envy;
 $select-selected-color: $watusi;
 $select-option-color: $envy;
 $shadow: 0.1rem 0.7rem 2rem -1rem $cabbage-pont;
+$title-deep-color: $cabbage-pont;
+$title-bright-color: $envy;
 
 /// FUNCTIONS
 @function calculateRem($size, $scale: 1) {

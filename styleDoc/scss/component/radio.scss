@@ -5,15 +5,16 @@
   position: relative;
   padding-left: 2.5rem;
   margin-bottom: 2rem;
+  padding-top: 0.2rem;
   cursor: pointer;
   font-size: 1.25rem;
   & input {
     position: absolute;
-    z-index: 1;
     opacity: 0;
     cursor: pointer;
     &:checked ~ .radio__checkmark {
-        background-color: $radio-color;
+        background-color: $radio-active-color;
+        border: 0.1rem solid $radio-active-color;
         &:after {
           display: block;
         }
@@ -25,7 +26,8 @@
     left: 0;
     height: 1.6rem;
     width: 1.6rem;
-    background-color: #eee;
+    border: 0.1rem solid $radio-border-color;
+    background-color: $radio-background-color;
     border-radius: 50%;
     &:after {
       content: "";
@@ -36,12 +38,13 @@
       width: 0.6rem;
       height: 0.6rem;
       border-radius: 50%;
-      background: white;
+      background: $radio-check-color;
     }
   }
   &:hover {
     & input ~ .radio__checkmark {
       background-color: $radio-hover-color;
+      border: 0.1rem solid $radio-hover-color;
     }
   }
 }
