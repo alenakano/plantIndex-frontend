@@ -6,6 +6,7 @@ $font-title: 3rem;
 $font-light: 100;
 $font-regular: 400;
 $font-button: $font-poppins;
+$font-input: $font-poppins;
 
 // BASE COLORS
 $alabaster: #fafafc;
@@ -17,16 +18,22 @@ $watusi: #ffdfd4;
 
 // NAMED COLORS
 $font-deep-color: $cabbage-pont;
+$font-bright: $alabaster;
 $title-deep-color: $cabbage-pont;
 $title-bright-color: $envy;
-$border-color: $shilo;
+$border-color: $envy;
+$border-focus-color: $shilo;
+$button-background-transition-color: $envy;
+$button-color: $cabbage-pont;
+$button-transition-color: $shilo;
 $border-bright-color: $envy;
 $icon-separator-color: $cabbage-pont;
 $background-menu-color: $alabaster;
 $button-color-font: $cabbage-pont;
 $mask: #68686BBB;
 $select-selected-color: $watusi;
-$shadow: 1px 5px 10px 1px #DDD;
+$select-option-color: $envy;
+$shadow: 0.1rem 0.7rem 2rem -1rem $cabbage-pont;
 
 /// FUNCTIONS
 @function calculateRem($size, $scale: 1) {

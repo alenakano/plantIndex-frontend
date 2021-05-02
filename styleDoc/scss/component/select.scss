@@ -1,29 +1,41 @@
 @import '../variables';
 
+@keyframes slide {
+  from { 
+    color: transparent;  
+    background-color: transparent;
+    border-color: transparent;
+  }
+}
+
 .custom-select {
   position: relative;
-  // background-color:blue;
-  // display: none;
   height: 2.5rem;
-  width: 50%;
+  width: 100%;
   background-color: $background-menu-color;
-  border: 0.15rem solid $border-color;
+  border-bottom: 0.15rem solid $border-color;
   box-sizing: border-box;
   padding: 0.6rem 0 0 1rem;
   &__select {
     display: none;
   }
   &__options {
+    animation: navdown 0.5s;
+    background-color: $background-menu-color;
     position: absolute;
     top: 100%;
     left: 0;
     right: 0;
-    z-index: 99;
+    z-index: 10;
     color: $font-deep-color;
-    border: 1px solid transparent;
-    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    border: 0.1rem solid transparent;
+    border-top: 0.15rem solid;
+    border-color:  $border-color;
     cursor: pointer;
+    animation-name: slide;
+    animation-duration: 0.5s;
     user-select: none;
+    box-shadow: $shadow;
     &--hide {
       display: none;
     }
@@ -31,11 +43,13 @@
   &__option {
     padding: 0.5rem 0 0.5rem 1rem;
     &:hover {
-      background-color: $select-selected-color;
+      background-color: $select-option-color;
     }
     &--selected {
       padding: 0.5rem 0 0.5rem 1rem;
-      background-color: $select-selected-color;
+      background-color: $select-option-color;
+      animation-name: slide;
+      animation-duration: 0.5s;
     }
   }
   &__selected {

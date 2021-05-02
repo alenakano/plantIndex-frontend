@@ -6,20 +6,29 @@
   font-size: medium;
   display: inline;
   cursor: pointer;
-  width: 50%;
+  width: 100%;
   height: 2.5rem;
   color: $button-color-font;
+  transition: 0.8s;
   &:hover {
     box-shadow: $shadow;
-    transition: 0.8s;
+    transition: 0.3s;
   }
   &--transparent {
     background-color: transparent;
-    border: 0.15rem solid $border-color;
+    border: 0.15rem solid $button-color;
+    &:hover {
+      border-color:  $border-focus-color;
+      transition: 0.3s;
+    }
   }
   &--solid {
-    background-color: $border-color;
+    background-color: $button-color;
+    color: $font-bright;
     border: none;
+    &:hover {
+      background-color: $button-background-transition-color;
+    }
   }
 
   
