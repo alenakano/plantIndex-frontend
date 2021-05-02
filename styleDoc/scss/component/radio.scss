@@ -1,0 +1,49 @@
+@import '../variables';
+
+.radio {
+  display: block;
+  position: relative;
+  padding-left: 2.5rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  font-size: 1.25rem;
+  & input {
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    &:checked ~ .radio__checkmark {
+        background-color: $radio-color;
+        &:after {
+          display: block;
+        }
+      }
+    }
+  &__checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1.6rem;
+    width: 1.6rem;
+    background-color: #eee;
+    border-radius: 50%;
+    &:after {
+      content: "";
+      position: absolute;
+      display: none;
+      top: 0.5rem;
+      left: 0.5rem;
+      width: 0.6rem;
+      height: 0.6rem;
+      border-radius: 50%;
+      background: white;
+    }
+  }
+  &:hover {
+    & input  ~ .checkmark {
+      background-color: #ccc;
+    }
+  }
+}

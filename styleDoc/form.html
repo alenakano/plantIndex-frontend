@@ -1,0 +1,82 @@
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100,200,300,400&display=swap" rel="stylesheet">   
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@100;300;400&display=swap" rel="stylesheet">     
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/component/menu.css" />
+    <link rel="stylesheet" type="text/css" href="./css/component/search-form.css">
+    <link rel="stylesheet" type="text/css" href="./css/component/button.css">
+    <link rel="stylesheet" type="text/css" href="./css/component/select.css" />
+    <link rel="stylesheet" type="text/css" href="./css/component/input.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/component/radio.css"/>
+
+    <title>Form</title>
+  </head>
+  <body>
+    <div class="app">
+      <header class="header menu">
+        <nav class="menu__block">
+          <a href="index.html"><p class="title--signature">Plant<span class="title">Index</span></p></a>
+          <ul class="menu__list">
+            <li class="menu__item menu__item--icon1">
+              <a href="#" class="menu__text">sobre</a>
+            </li>
+            <li class="menu__item menu__item--icon2">
+              <a href="#" class="menu__text">cadastre</a>
+            </li>
+            <li class="menu__item menu__item--icon3">
+              <a href="#" class="menu__text">pesquise</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="main">
+        <form class="searchForm">
+          <input class="button button--transparent" type="button" value="Teste">
+          <br>
+          <br>
+          <br><br>
+          <input class="button button--solid" type="button" value="Teste2">
+          <br>
+          <br><br>
+          <div class="custom-select">
+            <select class="custom-select__select" name="componente" id="componente">
+              <option class="select__option" value="0">TESTANDO</option>
+              <option class="select__option" value="1">TESTE1</option>
+              <option class="select__option" value="2">TESTE2</option>
+              <option class="select__option" value="3">TESTE3</option>
+              <option class="select__option" value="4">TESTE4</option>
+            </select>
+          </div>
+          <br>
+          <br>
+          <br>
+          <div class="input-search">
+            <object type="image/svg+xml" class="input-search__icon">
+            </object>
+            <span class="input-search__icon"></span>
+            <input class="input-search__field" type="text" placeholder="Texto aqui">
+          </div>
+          <br><br>
+          <div class="radio">
+            Teste
+            <input type="radio" name="testando" class="radio__input">
+            <span class="radio__checkmark"></span>
+          </div>
+          <div class="radio">
+            Teste2
+            <input type="radio" name="testando" class="radio__input">
+            <span class="radio__checkmark"></span>
+          </div>
+        </form>
+      </main>
+      <footer class="footer">
+        teste footer
+      </footer>
+    </div>
+  </body>
+  <script src="./assets/js/custom-select.js"></script>
+</html>
