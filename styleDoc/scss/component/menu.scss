@@ -1,19 +1,12 @@
 @import '../variables';
 
-@mixin setup-bullet-icon($url) {
-  padding-left: 2rem;
-  &:before {
-    /// forma de mudar cor svg como background image
-    -webkit-mask-image: url($url);
-    -webkit-mask-size: 100% 100%;;
-    mask-image: url($url);
-    mask-size: 100% 100%;
-    background-color: $border-bright-color;
-    content: '';
-    display: inline-block;
-    height: 1em;
-    width: 1em;
-  }
+@mixin setup-bullet-icon($url: '/assets/icon.svg') {
+  position: absolute;
+  background: url($url) no-repeat;
+  background-size: contain;
+  height: 1.5rem;
+  width: 1.5rem;
+  filter: invert(28%) sepia(4%) saturate(2378%) hue-rotate(75deg) brightness(96%) contrast(94%);
 }
 
 @mixin background-opacity($color, $opacity: 0.3) {
@@ -43,19 +36,23 @@
     :hover {
       border-bottom: 2px solid $border-bright-color;
     }
+  }
+  &__object {
+    position: relative;
+    padding: 1rem;
     &--icon1 {
-      @include setup-bullet-icon('../../assets/icon.svg');
-      
+      @include setup-bullet-icon('/assets/icon.svg');
     }
     &--icon2 {
-      @include setup-bullet-icon('../../assets/icon2.svg');
+      @include setup-bullet-icon('/assets/icon2.svg');
     }
     &--icon3 {
-      @include setup-bullet-icon('../../assets/icon3.svg');
+      @include setup-bullet-icon('/assets/icon3.svg');
     }
   }
   &__text {
     padding-bottom: 0.2rem;
+    padding-left: 2rem;
   }
 }
 

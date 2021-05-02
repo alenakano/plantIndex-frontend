@@ -58,18 +58,10 @@ $title-bright-color: $envy;
 }
 
 @mixin separator($url:'../../assets/icon3.svg') {
-	text-align: center;
-	&:before {
-		content: '';
-		-webkit-mask-image: url($url);
-    -webkit-mask-size: 100% 100%;;
-		mask-image: url($url);
-		mask-size: 100% 100%;
-		background-color:$icon-separator-color;
-		display: block;
-		margin: 0 auto;
-		padding-bottom: 3rem;
-		height: 1em;
-		width: 1em;
-	}
+  background: url($url) no-repeat;
+  background-size: contain;
+  height: 2.5rem;
+  width: 2.5rem;
+	padding-bottom: 1rem;
+  filter: invert(28%) sepia(4%) saturate(2378%) hue-rotate(75deg) brightness(96%) contrast(94%);
 }

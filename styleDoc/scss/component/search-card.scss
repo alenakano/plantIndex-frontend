@@ -35,9 +35,12 @@
   }
   &__text {
     padding-top: 1rem;
+    height: 38%;
     padding-left: 0.1rem;
+    margin-bottom: 0.5rem;
     font-family: $font-family-text;
     font-weight: $font-weight-default;
     line-height: 1.5rem;
+    overflow: hidden;
   }
 }
