@@ -4,6 +4,8 @@
   position: absolute;
   background: url($url) no-repeat;
   background-size: contain;
+  left: 0.5rem;
+  top: -0.2rem;
   height: 1.5rem;
   width: 1.5rem;
   filter: invert(28%) sepia(4%) saturate(2378%) hue-rotate(75deg) brightness(96%) contrast(94%);
@@ -32,14 +34,9 @@
     display: flex;
     flex-direction: row;
   }
-  &__item {
-    :hover {
-      border-bottom: 2px solid $border-bright-color;
-    }
-  }
   &__object {
     position: relative;
-    padding: 1rem;
+    padding: 0 2rem 0.5rem 2rem;
     &--icon1 {
       @include setup-bullet-icon('/assets/icon.svg');
     }
@@ -49,10 +46,15 @@
     &--icon3 {
       @include setup-bullet-icon('/assets/icon3.svg');
     }
+    &:nth-last-child(1) {
+      padding-right: 0;
+    }
   }
   &__text {
-    padding-bottom: 0.2rem;
-    padding-left: 2rem;
+    padding: 0 0 0.3rem 0.3rem;
+    &:hover {
+      border-bottom: 1px solid $border-bright-color;
+    }
   }
 }
 
