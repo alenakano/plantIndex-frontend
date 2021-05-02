@@ -12,8 +12,6 @@
     z-index: 1;
     opacity: 0;
     cursor: pointer;
-    top: 0;
-    left: 0;
     &:checked ~ .radio__checkmark {
         background-color: $radio-color;
         &:after {
@@ -42,8 +40,8 @@
     }
   }
   &:hover {
-    & input  ~ .checkmark {
-      background-color: #ccc;
+    & input ~ .radio__checkmark {
+      background-color: $radio-hover-color;
     }
   }
 }
