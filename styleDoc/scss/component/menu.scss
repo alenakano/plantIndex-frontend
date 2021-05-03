@@ -1,6 +1,6 @@
 @import '../variables';
 
-@mixin setup-bullet-icon($url: '/assets/icon.svg') {
+@mixin setup-bullet-icon($url: '../../assets/icon.svg') {
   position: absolute;
   background: url($url) no-repeat;
   background-size: contain;
@@ -38,13 +38,13 @@
     position: relative;
     padding: 0 2rem 0.5rem 2rem;
     &--icon1 {
-      @include setup-bullet-icon('/assets/icon.svg');
+      @include setup-bullet-icon('../../assets/icon.svg');
     }
     &--icon2 {
-      @include setup-bullet-icon('/assets/icon2.svg');
+      @include setup-bullet-icon('../../assets/icon2.svg');
     }
     &--icon3 {
-      @include setup-bullet-icon('/assets/icon3.svg');
+      @include setup-bullet-icon('../../assets/icon3.svg');
     }
     &:nth-last-child(1) {
       padding-right: 0;

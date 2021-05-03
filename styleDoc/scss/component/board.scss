@@ -4,6 +4,8 @@
   &--mask {
     background-color: $mask;
     height: 100%;
+    height: -webkit-fill-available;
+    height: fill-available;
     width: 100%;
     font-family: $font-source-sans;
     font-size: $font-title;
